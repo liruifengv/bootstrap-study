@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>一只会笑的猫</title>
+    <style type="text/css">
+        body{
+            background-color: #bce8f1;
+        }
+        .container{
+            position: relative;/*相对定位；*/
+            width: 500px;
+            height: 500px;
+            margin: auto;/* 由浏览器定义外边距；*/
+            background-color:#f2dede;
+        }
+        /* 脸 */
+        .face{
+            position: absolute; /* 绝对定位*/
+            left: 50%;
+            top: 50%;;
+            width: 400px;
+            height: 350px;
+            margin-left: -200px;
+            margin-top: -180px;
+            border: 3px solid #000000 ;
+            border-radius: 50% 50% 35% 35%; /* 设置四个角的弧度； */
+            background-color:#f3f3f3;
+            z-index: 1;/* 设置堆叠顺序 */
+            overflow: hidden;  /* 处理溢出 ：隐藏 */
+        }
+        /* 耳朵  */
+        .ear-wrap{
+            position: absolute;
+            width: 400px;
+            left:50%;
+            top: 100px;
+            margin-left: -200px;
+        }
+        .ear{
+            width: 160px;
+            height: 200px;
+            position: absolute;
+            top: -22px;
+            left: 0;
+            border:2px solid black ;
+            background: #f3f3f3;
+            transform:rotate(-15deg); /*  旋转15度  */
+            -ms-transform:rotate(-15deg); /*  IE9   旋转15度  */
+            -moz-transform:rotate(-15deg); /*  火狐  旋转15度  */
+            -o-transform:rotate(-15deg); /*  Opera    旋转15度  */
+            -webkit-transform:rotate(-15deg); /*  Chrome和 Safari  旋转15度  */
+            border-radius: 4% 80% 0% 50%;
+            transition:all 1s;/*  过渡属性； */
+        }
+        .ear-wrap .right{
+            left: auto;
+            right: 0;
+            border-radius:80% 4% 50% 0%;
+            transform:rotate(15deg); /*  旋转15度  */
+            -ms-transform:rotate(15deg); /*  IE9   旋转15度  */
+            -moz-transform:rotate(15deg); /*  火狐  旋转15度  */
+            -o-transform:rotate(15deg); /*  Opera    旋转15度  */
+            -webkit-transform:rotate(15deg); /*  Chrome和 Safari  旋转15度  */
+        }
+        /* 头发*/
+        .hair{
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            left:50%;
+            margin-left: -80px;
+            background:#d06666;
+            overflow: hidden;
+            border-radius:0 0 50% 50%;
+        }
+        .hair div{
+            width: 75px;
+            height: 120px;
+            background: #a53221;
+        }
+        /* 眼睛 */
+        .eye-wrap{
+            width: 300px;
+            height: 60px;
+            top: 200px;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: 180px;
+            overflow: hidden;
+        }
+        .eye-wrap .eye{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            overflow: hidden;
+
+        }
+        .eye-wrap .eye-circle{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: 2px solid #000;
+            border-radius: 50%;
+            overflow: hidden;
+            box-sizing: border-box; /* 定义区域内的元素：并排！ */
+        }
+        .eye-wrap .right{
+            left: auto;
+            right: 60px;
+        }
+        .eye-wrap .left{
+            left: 60px;
+            right: auto;
+        }
+        .eye-wrap .eye-core{
+            height: 100px;
+            width: 30px;
+            background: #000000;
+            position: absolute;
+            left:50%;
+            margin-left: -15px;
+            transition:all 1s;
+            overflow: hidden;
+        }
+        .eye-wrap .eye-bottom{
+            width: 100px;
+            height: 100px;
+            border-radius: 40%;
+            position: absolute;
+            margin-top: 50px;
+            border-top:2px solid #000;
+            left: -40px;
+            right: 100px;
+            margin-right: 40px;
+            margin-left: 40px;
+            background: #f6f7f2;
+            transition: 1s;
+            overflow: hidden;
+        }
+        .eye-wrap .eye-red{
+            position: absolute;
+            height: 28px;
+            width: 70px;
+            background: red;
+            top: 50px;
+            left: 18px;
+            border-radius: 50% 50% 50% 50%;
+            background-image:-webkit-radial-gradient(50% 50% rgba(253,214,240,0.8)0% rgba(255,243,247,0.8)66% rgba(255,234,247,0.8)100% );
+            /* 设置背景图像；       径向渐变        */
+            opacity:0.0; /* 设置透明度 */
+            transition: all 0.1s ease-in 0.2s; /* 定义过渡速度曲线：慢速开始 */
+        }
+        /* 鼻子*/
+        .nose{
+            width: 30px;
+            height: 10px;
+            top: 250px;
+            left: 50%;
+            position: absolute;
+            margin-left: -15px;
+            border-bottom: 10px solid #000000;
+            border-radius: 0% 0% 50% 50%;
+        }
+        /*  嘴巴  */
+        .mouth-wrap{
+            position: absolute;
+            width: 100px;
+            height: 20px;
+            top: 268px;
+            left: 50%;
+            margin-left: -50px;
+            overflow: hidden;
+        }
+        .mouth{
+            position:absolute;
+            width: 50px;
+            height: 40px;
+            border-bottom: 4px solid #000000;
+            border-radius: 0%  40% 50% 20%;
+            border-right: 4px solid #000000;
+            margin-top: -26px;
+            left: 0px;
+            transition: all 1s;
+        }
+        .mouth-wrap .right{
+            position: absolute;
+            border-bottom: 4px solid #000000;
+            border-left: 4px solid #000000;
+            border-right: none;
+            border-radius: 40% 0% 20% 50%;
+            left: auto;
+            right: 0px;
+        }
+        /* 胡子 */
+        .mustache-wrap{
+            position: absolute;
+            height: 80px;
+            width: 380px;
+            top: 190px;
+            left: 50%;
+            margin-left: -190px;
+            z-index: 20;
+        }
+        .mustache > div:first-child{
+            /* 父元素的第一个子元素的每个div元素 */
+            position: absolute;
+            width: 30px;
+            height: 10px;
+            border-top: 5px #E53941 solid;
+            border-radius: 30% 50% 20% 50%;
+            margin-left: 20px;
+            margin-top: -10px;
+            transform: rotate(25deg);
+            -webkit-transform: rotate(25deg);
+        }
+        .mustache > div:nth-child(2) {
+            /* 父元素的第2个子元素的每个div元素 */
+            width: 20px;
+            height: 6px;
+            border-bottom: 4px #E53941 solid;
+            border-radius: 50% 50% 50% 50%;
+            transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+            -moz-transform: rotate(25deg);
+            -webkit-transform: rotate(25deg);
+            -o-transform: rotate(25deg);
+            margin-left: 20px;
+        }
+        .mustache > div:nth-child(3) {
+             /* 父元素的第三个子元素的每个div元素 */
+            width: 32px;
+            height: 10px;
+            border-bottom: 4px #E53941 solid;
+            border-radius: 30% 0% 50% 30%;
+            transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+            -moz-transform: rotate(25deg);
+            -webkit-transform: rotate(25deg);
+            -o-transform: rotate(25deg);
+            margin-left: 8px;
+        }
+        .mustache > div:nth-child(4) {
+            margin-top: 40px;
+            width: 26px;
+            height: 20px;
+            border-bottom: 4px #E53941 solid;
+            border-radius: 30% 0% 50% 30%;
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -webkit-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            margin-left: 28px;
+        }
+        .mustache > div:last-child {
+            width: 22px;
+            height: 10px;
+            border-bottom: 3px #E53941 solid;
+            border-radius: 0% 0% 50% 50%;
+            transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            margin-left: 40px;
+            margin-top: -8px;
+        }
+        .mustache-wrap .right {
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg); /* Safari 和 Chrome */
+            -moz-transform: rotateY(180deg); /* Firefox */
+            margin-top: -85px;
+        }
+        /*  鼠标hover样式 */
+        .container:hover .ear-wrap > div:first-child{
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            border-radius: 4% 80% 0% 60%;
+            transition: all 1s;
+        }
+        .container:hover .ear-wrap > div:last-child{
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            border-radius: 80% 4% 60% 0%;
+            transition: all 1s;
+        }
+        .container:hover .eye-bottom{
+            margin-top: 30px;
+            margin-bottom: 60px;
+            transition:all 1s;
+        }
+        .container:hover .eye-red{
+            opacity: 1;
+            transition: all 1s;
+        }
+        .container:hover .eye-core{
+            width: 40px;
+            margin-left: -20px;
+            transition: all 1s;
+        }
+        .container:hover .mouth{
+            border-radius: 50%;
+            transition: all 1s;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <!-- 脸 -->
+    <div class="face">
+        <!-- 头发 -->
+        <div class="hair">
+            <div></div>
+        </div>
+        <!-- 眼睛 -->
+        <div class="eye-wrap">
+            <!-- 左眼 -->
+                <div class="eye left">
+                    <div class="eye-circle">
+                        <div class="eye-core"></div>
+                    </div>
+                    <div class="eye-bottom"></div>
+                    <div class="eye-red"></div>
+                </div>
+            <!-- 右眼 -->
+                <div class="eye right">
+                    <div class="eye-circle">
+                        <div class="eye-core"></div>
+                    </div>
+                    <div class="eye-bottom"></div>
+                    <div class="eye-red"></div>
+                </div>
+        </div>
+        <!--鼻子 -->
+        <div class="nose"></div>
+        <!-- 嘴巴 -->
+        <div class="mouth-wrap">
+            <div class="mouth left"></div>
+            <div class="mouth right"></div>
+        </div>
+        <!--  胡子-->
+        <div class="mustache-wrap">
+            <div class="mustache left">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="mustache right">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--耳朵   耳朵应该在脸的div之外 -->
+    <div class="ear-wrap">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+    </div>
+
+</div>
+
+</body>
+</html>
