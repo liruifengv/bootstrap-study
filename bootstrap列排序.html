@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>bootstrap列排序</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>排序前</h1>
+        <div class="col-md-4" style="background-color: #E53941">
+            <p>我在左边</p>
+        </div>
+        <div class="col-md-8" style="background-color: #d06666">
+            <p>我在右边</p>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <h2>排序后</h2>
+        <div class="col-md-4 col-md-push-8" style="background-color: #E53941">
+            <p>我在左边</p>
+        </div>
+        <div class="col-md-8 col-md-pull-4" style="background-color: #d06666">
+            <p>我在右边</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
