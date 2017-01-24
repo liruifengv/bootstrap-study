@@ -21,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="黄家驹.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="黄家驹.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/黄家驹.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5882353">
+            <state vertical-scroll-proportion="-0.99125874">
               <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="响应式图片.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="响应式图片.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/响应式图片.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43356642">
+            <state vertical-scroll-proportion="-6.5">
               <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding />
             </state>
@@ -67,8 +67,8 @@
         <option value="$PROJECT_DIR$/选择框Select.html" />
         <option value="$PROJECT_DIR$/表单控件.html" />
         <option value="$PROJECT_DIR$/bootstrap字体图标.html" />
-        <option value="$PROJECT_DIR$/响应式图片.html" />
         <option value="$PROJECT_DIR$/黄家驹.html" />
+        <option value="$PROJECT_DIR$/响应式图片.html" />
       </list>
     </option>
   </component>
@@ -108,7 +108,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,6 +119,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,7 +190,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -230,6 +230,22 @@
     <entry file="file://$PROJECT_DIR$/黄家驹.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/响应式图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/黄家驹.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
           <folding />
         </state>
@@ -239,7 +255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -247,19 +262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9314" column="0" selection-start-line="9314" selection-start-column="0" selection-end-line="9314" selection-end-column="12" />
-          <folding>
-            <element signature="e#43293#43540#2" expanded="false" />
-            <element signature="e#43951#44271#2" expanded="false" />
-            <element signature="e#44675#44964#2" expanded="false" />
-            <element signature="e#70389#70589#2" expanded="false" />
-            <element signature="e#70726#70875#2" expanded="false" />
-            <element signature="e#71041#71187#2" expanded="false" />
-            <element signature="e#71855#72018#1" expanded="false" />
-            <element signature="e#85931#86174#2" expanded="false" />
-            <element signature="e#87136#87385#2" expanded="false" />
-            <element signature="e#119974#120161#2" expanded="false" />
-            <element signature="e#120216#120405#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -318,19 +320,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9314" column="0" selection-start-line="9314" selection-start-column="0" selection-end-line="9314" selection-end-column="12" />
-          <folding>
-            <element signature="e#43293#43540#2" expanded="false" />
-            <element signature="e#43951#44271#2" expanded="false" />
-            <element signature="e#44675#44964#2" expanded="false" />
-            <element signature="e#70389#70589#2" expanded="false" />
-            <element signature="e#70726#70875#2" expanded="false" />
-            <element signature="e#71041#71187#2" expanded="false" />
-            <element signature="e#71855#72018#1" expanded="false" />
-            <element signature="e#85931#86174#2" expanded="false" />
-            <element signature="e#87136#87385#2" expanded="false" />
-            <element signature="e#119974#120161#2" expanded="false" />
-            <element signature="e#120216#120405#2" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -338,22 +327,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/响应式图片.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/黄家驹.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5882353">
+        <state vertical-scroll-proportion="-0.99125874">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/响应式图片.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43356642">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
           <folding />
         </state>
       </provider>
