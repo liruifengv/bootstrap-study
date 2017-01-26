@@ -8,11 +8,12 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-<div id="carousel-example" class="carousel slide" data-ride="carousel">
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carousel-example" data-slide-to="0" class="item-active"></li>
-        <li data-target="#carousel-example" data-slide-to="1"></li>
-        <li data-target="#carousel-example" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="item-active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
@@ -34,17 +35,21 @@
             </div>
         </div>
     </div>
-    <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
-      &lsaquo;
+    <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#carousel-example" role="button" data-slide="next">
-        &rsaquo;
+    <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
     </a>
 </div>
+
 <script>
     $(function(){
         $('.carousel').carousel();
     });
+
 </script>
 
 
