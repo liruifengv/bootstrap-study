@@ -1,0 +1,41 @@
+.public-header{
+    height: 100px;
+background: #ffffff;
+}
+.public-header .header-logo{
+    float: left;
+    margin-top: 20px;
+    margin-left: 260px;
+    width: 360px;
+    height: 70px;
+    background: url(../images/index-header-logo.png);
+
+
+
+}
+.public-header .header-nav .item{
+    float: right;
+    margin-top: 40px;
+    font-size: 24px;
+
+    font-family: regular;
+    margin-left: 22px;
+}
+.public-header .header-nav a{
+    color: black;
+}
+.public-header .header-nav a:hover{
+    text-decoration: underline;
+}
+.public-container{
+    position: relative;
+    margin: 0 auto;
+    width: 1920px;
+}
+.public-footer{
+    height: 136px;
+    background: #999966;
+}
+.public-footer .footer-col{
+    margin-top: 38px;
+}
