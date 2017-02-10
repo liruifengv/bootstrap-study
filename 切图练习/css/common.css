@@ -9,16 +9,12 @@ background: #ffffff;
     width: 360px;
     height: 70px;
     background: url(../images/index-header-logo.png);
-
-
-
 }
 .public-header .header-nav .item{
     float: right;
     margin-top: 40px;
     font-size: 24px;
-
-    font-family: regular;
+    font-weight: lighter;
     margin-left: 22px;
 }
 .public-header .header-nav a{
@@ -37,5 +33,79 @@ background: #ffffff;
     background: #999966;
 }
 .public-footer .footer-col{
-    margin-top: 38px;
+    float: left;
+    margin-top: 40px;
+    width: 290px;
+    height: 138px;
+    margin-right: 23px;
+}
+.border{
+    float: left;
+    width: 47px;
+    height: 47px;
+    background: #f0f0f0;
+    border: 1px solid #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+.p1{
+    font-family: "Droid Sans Mono", "DejaVu Sans Mono";
+    font-weight: bold;
+    font-size: 16.67px;
+    color: #fff;
+    background:url("../images/4.png") no-repeat 10px 5px;
+}
+.p2{
+    font-family: "Î¢ÈíÑÅºÚ";
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.p3{
+    background:url("../images/6.png") no-repeat;
+
+}
+.p4{
+    font-size: 12.5px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.p5{
+    color: #fff;
+    font-size: 18.75px;
+    text-align: center;
+    margin-top: 8px;
+
+}
+.p6{
+    color: #fff;
+    font-size: 5px;
+    text-align: center;
+
+}
+.text1{
+    float: left;
+    width:  80px;
+    height: 40px;
+    text-align: center;
+    margin-left:10px;
+
+}
+.p7{
+    color: #fff;
+    font-size: 10.42px;
+    text-align: center;
+    margin-top: 15px;
+}
+.text2{
+    float: left;
+    width:  100px;
+    height: 30px;
+    text-align: center;
+    margin-left:10px;
+
 }
