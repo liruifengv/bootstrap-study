@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <title>双飞翼布局</title>
     <style>
-        .content{
+        .wrap{
+            float: left;
+            width: 100%;
 
         }
         .main{
-            float: left;
+
             height: 200px;
-            width: 100%;
+            margin-left: 110px;
+            margin-right: 210px;
             background-color: #01549b;
         }
         .left{
             float: left;
             height: 200px;
-            width: 200px;
+            width: 100px;
             margin-left: -100%;
             background-color: #bd4147;
         }
@@ -31,12 +34,11 @@
     </style>
 </head>
 <body>
-<div class="content">
-    <div class="main">
-
-    </div>
+<div class="wrap">
+    <div class="main"></div>
+</div>
     <div class="left"></div>
     <div class="right"></div>
-</div>
+
 </body>
 </html>
