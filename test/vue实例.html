@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>vue实例</title>
+</head>
+<body>
+<script src="src/vue.js"></script>
+<div id="app">
+    <span>{{count}}</span>
+    <button @click="inc">+</button>
+    <button @click="dec">-</button>
+</div>
+<script>
+    var app=new Vue({
+       // el:'#app',            //与$mount 同义
+        data(){
+        return {count:0}
+        },
+        methods:{
+            inc()
+            {
+                this.count++
+            },
+            dec()
+            {
+                this.count--
+            }
+        }
+    })
+    app.$mount('#app')             //与el:'#app’同义
+</script>
+
+</body>
+</html>
