@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors https://github.com/liruifengv
+ * @date    2017-05-17 18:31:14
+ * @version $Id$
+ */
+ 
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        main{
+            text-align: right;
+        }
+
+        #name,#password,#email,#repassword,#phone{
+            width: 400px;
+            height: 50px;
+            border-radius: 8px;
+            margin: 30px;
+            color: #000;
+            font-size: 20px;
+            border: 2px solid #ccc;
+        }
+        form{
+            position: absolute;
+            top: 150px;
+            line-height: 10px;
+            right: 200px;
+        }
+        span{
+            font-family: SimHei;
+            font-size: 30px;
+        }
+
+        main p{
+            font-size: 20px;
+            font-weight: bolder;
+            text-align: center;
+            color: #aaa;
+            line-height: 30px;
+        }
+        #btn{
+            width: 100px;
+            height: 50px;
+            background-color: #0275d8;
+            border: 1px solid #0275d8 ;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
