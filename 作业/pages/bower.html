@@ -2,18 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>爱心社区</title>
-    <link href="style/public.css" rel="stylesheet">
-    <style>
-        main{
-            background: url("img/loveCOM.png") no-repeat;
-            position: relative;
-            top: 150px;
-            height: 1000px;
-        }
-        footer{
-        }
-    </style>
+    <title>Bower</title>
+    <link rel="stylesheet" type="text/css" href="../style/signin.css">
+    <link href="../style/public.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
@@ -31,11 +22,20 @@
             <li><a href="loveCom.html">爱心社区</a></li>
             <li><a href="projectInt.html">项目介绍</a></li>
             <li><a href="newestDoing.html">最新活动</a></li>
-            <li class="index"><a href="index.html">首页</a></li>
+            <li class="index"><a href="../index.html">首页</a></li>
         </nav>
     </header>
     <main>
 
+        <form>
+            <label for="name"><span>账户名</span></label><input type="text" id="name">
+            <p id="hint1"></p>
+            <label for="password"><span>密码</span></label><input type="password" id="password">
+            <p id="hint2"></p>
+
+            <input type="button" value="登录" class="btn" id="btn1">
+            <a href="login.html"><input type="button" value="注册" class="btn" id="btn2"></a>
+        </form>
     </main>
     <footer>
         <div class="footer-bottom">
@@ -43,8 +43,8 @@
             <a>Back to top</a>
         </div>
     </footer>
-
-
+</div>
+<script src="../src/signin.js"></script>
 
 </body>
 </html>

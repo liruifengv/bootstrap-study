@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>新世界</title>
     <link rel="stylesheet" type="text/css" href="./style/index.css">
-
 </head>
 <body>
 
@@ -14,15 +13,15 @@
         <div class="logo-p">新世界</div>
         <nav>
             <li class="sign-in">
-                <a href="signin.html">
+                <a href="pages/signin.html">
                     <div class="sign-in-logo"></div>
                     <div class="sign-in-p">登录</div>
                 </a>
             </li>
-            <li><a href="aboutUs.html">关于我们</a></li>
-            <li><a href="loveCom.html">爱心社区</a></li>
-            <li><a href="projectInt.html">项目介绍</a></li>
-            <li><a href="newestDoing.html">最新活动</a></li>
+            <li><a href="pages/aboutUs.html">关于我们</a></li>
+            <li><a href="pages/loveCom.html">爱心社区</a></li>
+            <li><a href="pages/projectInt.html">项目介绍</a></li>
+            <li><a href="pages/newestDoing.html">最新活动</a></li>
             <li class="index"><a href="index.html">首页</a></li>
         </nav>
     </header>
@@ -31,7 +30,9 @@
         <div class="start">
             <h1>Time of new life</h1>
             <p>新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
-            <label for="input"><input id="input" type="button" value="开始体验"></label>
+            <a href="pages/enjoy.html">
+                <label for="input"><input id="input" type="button" value="开始体验"></label>
+            </a>
         </div>
 
         <div class="item">
@@ -117,7 +118,7 @@
              </section>
         </div>
 
-        <div> class="newworld">
+        <div>
             <div class="left">
                 <p><span>新世界</span><span>TIME</span><span>@新世界－北京<br>2017.05.01</span></p>
             </div>
@@ -125,7 +126,7 @@
                 <h4>新世界／<span style="color:#e74f4d;">01</span></h4>
                 <span>新世界是个新世界新世界是个新世界新世界是个新世界<br>新世界是个新世界新世界是个新世界新世界是个新世界<br>新世界是个新世界新世界是个新世界新世界是个新世界<br>新世界是个新世界</span><br>
 
-                <input type="button" value="更多详情">
+                <a href="pages/more.html"><input type="button" value="更多详情"></a>
                 <ul>
                     <li></li>
                     <li></li>
@@ -138,12 +139,12 @@
             <div class="main">
                 <p>新时代</p>
                 <p>关于爱<span>生活</span>的我们</p>
-                <input type="button" value="查看更多">
+                <a href="pages/more1.html"><input type="button" value="查看更多"></a>
             </div>
             <div class="left1">
                 <p>新时代</p>
                 <p>关于爱生活的我们</p>
-                <input type="button" value="查看更多">
+                <a href="pages/more2.html"><input type="button" value="查看更多"></a>
             </div>
             <div class="right1"></div>
         </div>
@@ -192,7 +193,7 @@
                         </li>
                     </ul>
                     <textarea name="text-content" cols="69" rows="8">请简单描述您梦想的生活</textarea>
-                    <input type="button" value="提交申请" name="submit" class="submit"/>
+                    <input type="button" value="提交申请" name="submit" class="submit" onclick="alert('申请成功！')"/>
 
                 </div>
 
@@ -212,13 +213,13 @@
             也可以通过以下任何方式关注我们动态</p>
             <form>
                 <label for="input1"><input  id="input1" type="text" placeholder="someone@email.com"></label>
-                <label for="input2"><input id="input2" type="button" value="提交"></label>
+                <label for="input2"><input id="input2" type="button" value="提交" onclick="alert('订阅成功！')"></label>
             </form>
             <div class="icon">
-                <a><img src="img/icon1.png"></a>
-                <a><img src="img/icon2.png"></a>
-                <a><img src="img/icon3.png"></a>
-                <a><img src="img/icon4.png"></a>
+                <a href="pages/qq.html"><img src="img/icon1.png"></a>
+                <a href="pages/weibo.html"><img src="img/icon2.png"></a>
+                <a href="pages/twitter.html"><img src="img/icon3.png"></a>
+                <a href="pages/bower.html"><img src="img/icon4.png"></a>
             </div>
         </div>
         <div class="footer-bottom">
