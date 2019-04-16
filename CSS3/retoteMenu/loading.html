@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>loading</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #fff;
+            text-align: center;
+            width: 960px;
+            max-width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: #108ee9;
+        }
+        
+        body *,
+        body *:before,
+        body *:after {
+            box-sizing: inherit;
+        }
+        
+        .box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid currentcolor;
+            border-radius: 3px;
+            font-size: 30px;
+            color: #108ee9;
+            padding: 1em;
+            margin-bottom: .25em;
+            vertical-align: top;
+            -webkit-transition: .3s color, .3s border;
+            transition: .3s color, .3s border;
+        }
+        
+        [class*="loader-"] {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            color: inherit;
+            vertical-align: middle;
+            pointer-events: none;
+        }
+        
+        .loader-01 {
+            border: .2em dotted #108ee9;
+            border-radius: 50%;
+            -webkit-animation: 1s loader-01 linear infinite;
+            animation: 1s loader-01 linear infinite;
+        }
+        
+        @-webkit-keyframes loader-01 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loader-01 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        .loader-02 {
+            border: .2em solid transparent;
+            border-top-color: currentcolor;
+            border-radius: 50%;
+            -webkit-animation: 1s loader-02 linear infinite;
+            animation: 1s loader-02 linear infinite;
+            position: relative;
+        }
+        
+        .loader-02:before {
+            content: '';
+            display: block;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: -.2em;
+            left: -.2em;
+            border: .2em solid currentcolor;
+            border-radius: 50%;
+            opacity: .5;
+        }
+        
+        @-webkit-keyframes loader-02 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes loader-02 {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        .loader-03 {
+            position: relative;
+        }
+        
+        .loader-03:before,
+        .loader-03:after {
+            content: '';
+            display: block;
+            position: absolute;
+            background-color: currentcolor;
+            left: 50%;
+            right: 0;
+            top: 0;
+            bottom: 50%;
+            box-shadow: -.5em 0 0 currentcolor;
+            -webkit-animation: loader-03 1s linear infinite;
+            animation: loader-03 1s linear infinite;
+        }
+        
+        .loader-03:after {
+            top: 50%;
+            bottom: 0;
+            -webkit-animation-delay: .25s;
+            animation-delay: .25s;
+        }
+        
+        @-webkit-keyframes loader-03 {
+            0%,
+            100% {
+                box-shadow: -.5em 0 0 transparent;
+                background-color: currentcolor;
+            }
+            50% {
+                box-shadow: -.5em 0 0 currentcolor;
+                background-color: transparent;
+            }
+        }
+        
+        @keyframes loader-03 {
+            0%,
+            100% {
+                box-shadow: -.5em 0 0 transparent;
+                background-color: currentcolor;
+            }
+            50% {
+                box-shadow: -.5em 0 0 currentcolor;
+                background-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS LOADERS</h1>
+    <div class="box">loader 1
+        <div class="loader-01"></div>
+    </div>
+    <div class="box">loader 2
+        <div class="loader-02"></div>
+    </div>
+    <div class="box">loader 3
+        <div class="loader-03"></div>
+    </div>
+</body>
+
+</html>
