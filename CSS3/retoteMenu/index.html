@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rotateMenu</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: #f5f5f5;
+        }
+        .container {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        .top_header {
+            width: 100%;
+            height: 100px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content {
+            background: #f5f5f5;
+            height: 2000px;
+        }
+        .logo {
+            margin-left: 100px;
+        }
+        .menu_box {
+            width: 76px;
+            height: 76px;
+            z-index: 2;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.66s;
+            transition-duration: 0.66s;
+            -webkit-transition-timing-function: swing;
+            transition-timing-function: swing;
+        }
+        .menu {
+            width: 76px;
+            height: 8px;
+            background-color: #3293ff;
+            border-radius: 2px;
+            position: absolute;
+            top: 28px;
+            left: 0px;
+        }
+        .menu,.menu::before,.menu::after {
+            width: 76px;
+            height: 8px;
+            background-color: #3293ff;
+            border-radius: 2px;
+            content: "";
+            position: absolute;
+            left: 0;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: swing;
+            transition-timing-function: swing;
+        }
+        .menu::before {
+            top: -20px;
+        }
+        .menu::after {
+            top: 20px;
+        }
+        .nav-open1 .menu{
+            width: 0;
+        }
+        .nav-open1 .menu::before{
+            transform: translateY(20px) rotate(45deg);
+        }
+        .nav-open1 .menu::after{
+            transform: translateY(-20px) rotate(-45deg);
+        }
+
+
+        .menu_box2 {
+            width: 76px;
+            height: 76px;
+            z-index: 2;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.66s;
+            transition-duration: 0.66s;
+            -webkit-transition-timing-function: swing;
+            transition-timing-function: swing;
+        }
+        .menu2 {
+            width: 76px;
+            height: 8px;
+            background-color: #3293ff;
+            border-radius: 2px;
+            position: absolute;
+            top: 28px;
+            left: 0px;
+        }
+        .menu2,.menu2::before,.menu2::after {
+            width: 76px;
+            height: 8px;
+            background-color: #3293ff;
+            border-radius: 2px;
+            content: "";
+            position: absolute;
+            left: 0;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+            -webkit-transition-timing-function: swing;
+            transition-timing-function: swing;
+        }
+        .menu2::before {
+            top: -20px;
+        }
+        .menu2::after {
+            top: 20px;
+        }
+        .nav-open2 .menu2{
+            transform: translateY(0) rotate(180deg);
+        }
+        .nav-open2 .menu2::before{
+            width: 38px;
+            transform: translateX(40px) translateY(6px) rotate(45deg);
+        }
+        .nav-open2 .menu2::after{
+            width: 38px;
+            transform: translateX(40px) translateY(-6px) rotate(-45deg);
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="top_header">
+            <div class="menu_box2">
+                <div class="menu2"></div>
+            </div>
+            <div class="menu_box">
+                <div class="menu"></div>
+            </div>
+            <nav class="nav">
+
+            </nav>
+        </header>
+        <div class="content">
+            请点击上方菜单按钮
+        </div>
+        <div class="modal"></div>
+    </div>
+</body>
+<script type="text/javascript" src="http://update2.locojoy.com/wz/js/jweb-2.0.2-min.js"></script>
+<script>
+    $('.menu_box').click(function() {
+        $('body').toggleClass('nav-open1');
+    });
+    $('.menu_box2').click(function() {
+        $('body').toggleClass('nav-open2');
+    });
+</script>
+</html>

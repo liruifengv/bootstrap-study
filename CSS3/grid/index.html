@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>grid</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            .wrapper {
+                display: grid;
+                grid-template-columns: 18.75rem 18.75rem 18.75rem;
+                grid-template-rows: 18.75rem 18.75rem 18.75rem;
+            }
+            .wrapper a {
+                width: 100%;
+                background: #fff;
+                border: .125rem solid #108ee9;
+                cursor: pointer;
+                box-sizing: border-box;
+                /* box-shadow: .625rem .625rem .3125rem #888888; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #ff0000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="wrapper">
+                <a class="item1" href="../retoteMenu/index.html" target="_blank">菜单按钮效果</a>
+                <a class="item2">2</a>
+                <a class="item3">3</a>
+                <a class="item4">4</a>
+                <a class="item5">5</a>
+                <a class="item6">6</a>
+                <a class="item7">7</a>
+                <a class="item8">8</a>
+                <a class="item9">9</a>
+            </div>
+        </div>
+    </body>
+</html>
